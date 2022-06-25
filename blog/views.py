@@ -22,4 +22,4 @@ class PostUpdateView(generic.UpdateView):
 class PostDeleteView(generic.UpdateView):
     model = Post
     fields = "__all__"
-    success_url  = reverse_lazy("blog:all")
+    success_url  = reverse_lazy("blog:all")pyth

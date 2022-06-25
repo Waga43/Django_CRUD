@@ -11,3 +11,7 @@ urlpatterns = [
     path("read/<slug:slug>", views.PostDetailView.as_view(), name="post_detail"),
 
 ]
+
+urlpatterns = [
+    path("blog/", include("blog.urls", namespace="blog"))
+]
